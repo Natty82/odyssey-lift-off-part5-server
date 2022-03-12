@@ -1,6 +1,6 @@
 const { gql } = require('apollo-server');
 
-const typeDefs = gql`
+const typeDefs = gql `
   type Query {
     "Query to get tracks array for the homepage grid"
     tracksForHome: [Track!]!
@@ -65,7 +65,7 @@ const typeDefs = gql`
     length: Int
     "The module's text-based description, can be in markdown format. In case of a video, it will be the enriched transcript"
     content: String
-    "The module's video url, for video-based modules"
+    "The modules video url, for video-based modules"
     videoUrl: String
   }
 `;
